@@ -16,7 +16,7 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      expect(appController.getHello()).toBe('<p>Это backend для Тестового задания Frontend разработчик в Bell Integrator. Список элементов доступен <a href="http://localhost:3000/elements">по ссылке</a>.</p>');
     });
   });
 });
