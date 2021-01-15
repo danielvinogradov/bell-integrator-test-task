@@ -2,7 +2,12 @@
   section.search
     label.search__label
       span.search__labelText Поиск:
-      input.search__input(type="search" placeholder="Введите значение")
+      input.search__input(
+        type="search"
+        placeholder="Введите значение"
+        :value="$store.getters.returnSearchString"
+        @input="(evt) => $store.dispatch('onSearchStringChange', evt.target.value)"
+      )
 </template>
 
 <script lang="ts">

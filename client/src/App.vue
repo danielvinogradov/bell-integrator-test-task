@@ -14,6 +14,9 @@ import AppFooter from '@/components/AppFooter.vue';
   components: { AppHeader, AppFooter },
 })
 export default class App extends Vue {
+  mounted() {
+    this.$store.dispatch('fetchElements');
+  }
 }
 </script>
 
