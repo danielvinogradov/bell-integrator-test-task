@@ -2,14 +2,16 @@
   section.elementsLists
     div.elementsLists__itemContainer
       h2.elementsLists__heading Primary List
-      ul.elementsLists__item()
+      ul.elementsLists__item(v-if="$store.getters.primaryListItemsToShow.length > 0")
         elements-list-item(v-for="element in $store.getters.primaryListItemsToShow" :key="element.id" :element="element")
           app-button(@click="() => $store.dispatch('onElementAddition', element.id)") Добавить +
+      p(v-else) Элементы отсутствуют
     div.elementsLists__itemContainer
       h2.elementsLists__heading Secondary List
-      ul.elementsLists__item()
+      ul.elementsLists__item(v-if="$store.getters.secondaryListItemsToShow.length > 0")
         elements-list-item(v-for="element in $store.getters.secondaryListItemsToShow" :key="element.id" :element="element")
           app-button(@click="() => $store.dispatch('onElementDeletion', element.id)") Удалить -
+      p(v-else) Элементы отсутствуют
 </template>
 
 <script lang="ts">
