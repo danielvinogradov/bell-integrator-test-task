@@ -13,6 +13,7 @@
           td {{ item.element.name }}
           td {{ item.operationType }}
           td {{ item.time.toLocaleString() }}
+    p(v-else) Элементов не найдено
 </template>
 
 <script lang="ts">
