@@ -87,6 +87,7 @@ export default class Elements extends VuexModule {
     const element = this.returnPrimaryList[elementIndex];
     await this.context.commit('pushToSecondaryList', element);
     await this.context.commit('removeFromPrimaryList', elementIndex);
+    await this.context.dispatch('onListChange', { element: element, operationType: 'addition' });
   }
 
   @Action
@@ -95,5 +96,6 @@ export default class Elements extends VuexModule {
     const element = this.returnSecondaryList[elementIndex];
     await this.context.commit('pushToPrimaryList', element);
     await this.context.commit('removeFromSecondaryList', elementIndex);
+    await this.context.dispatch('onListChange', { element: element, operationType: 'deletion' });
   }
 }
