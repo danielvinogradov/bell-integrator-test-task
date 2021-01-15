@@ -73,7 +73,7 @@ export default class Elements extends VuexModule {
 
   @Action
   async fetchElements() {
-    const URL = 'http://localhost:3000/elements';
+    const URL = `${window.location.origin}:3000/elements`;
     const fetchParams = { method: 'GET' };
     await fetch(URL, fetchParams)
       .then(res => res.json())

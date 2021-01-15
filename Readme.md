@@ -1,5 +1,10 @@
 # Тестовое задание на вакансию Middle Frontend Developer (Vue.js) в Bell Integrator
 
+## Посмотреть на сервере
+Frontend: [http://194.67.105.79:80](http://194.67.105.79:80)
+
+Backend: [http://194.67.105.79:3000](http://194.67.105.79:3000)
+
 <details>
 <summary>Задание</summary>
 Реализация задания должна быть  на TypeScript.
@@ -35,7 +40,7 @@
 ### Стек
 Backend: Nest.js, Express.js, TypeScript
 
-Frontend: Vue.js, TypeScript (vue-class-components, vuex-property-decorator)
+Frontend: Vue.js, TypeScript
 
 Deploy: Docker, Nginx (для Frontend)
 
