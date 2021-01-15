@@ -5,6 +5,8 @@ Frontend: [http://194.67.105.79:80](http://194.67.105.79:80)
 
 Backend: [http://194.67.105.79:3000](http://194.67.105.79:3000)
 
+## Задание
+
 <details>
 <summary>Задание</summary>
 Реализация задания должна быть  на TypeScript.
@@ -37,7 +39,7 @@ Backend: [http://194.67.105.79:3000](http://194.67.105.79:3000)
 
 </details>
 
-### Стек
+## Стек
 Backend: Nest.js, Express.js, TypeScript
 
 Frontend: Vue.js, TypeScript
